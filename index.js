@@ -5,8 +5,8 @@
 //data Set users color dan restaurant
 let colorFirst = new Set();
 let colorSecond = new Set();
-let restaurantSecond = new Set();
 let restaurantFirst = new Set();
+let restaurantSecond = new Set();
 
 //memasukkan nilai colorFirst
 //firstUser
