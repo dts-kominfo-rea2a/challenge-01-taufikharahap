@@ -2,12 +2,53 @@
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 
+//data Set users color dan restaurant
+let colorFirst = new Set();
+let colorSecond = new Set();
+let restaurantSecond = new Set();
+let restaurantFirst = new Set();
+
+//memasukkan nilai colorFirst
+//firstUser
+colorFirst.add("Yellow");
+colorFirst.add("Pink");
+colorFirst.add("White");
+colorFirst.add("Purple");
+//secondUser
+colorSecond.add("Blue");
+colorSecond.add("Black");
+colorSecond.add("Grey");
+
+//memasukkan nilai restaurant
+//firsUser
+restaurantFirst.add("Bento");
+restaurantFirst.add("Sushi");
+restaurantFirst.add("Pancake");
+restaurantFirst.add("Eggy");
+restaurantFirst.add("Tampura");
+restaurantFirst.add("Bento");
+restaurantFirst.add("Eggy");
+restaurantFirst.add("Padang");
+restaurantFirst.add("Tteok");
+restaurantFirst.add("Sushi");
+restaurantFirst.add("Sushi");
+//secondUser
+restaurantSecond.add("Tempura");
+restaurantSecond.add("Bento");
+restaurantSecond.add("Sushi");
+restaurantSecond.add("Pancake");
+restaurantSecond.add("Padang");
+restaurantSecond.add("Katsu");
+restaurantSecond.add("Geprek");
+restaurantSecond.add("Pancake");
+restaurantSecond.add("Eggy");
+
 const firstUser = {
     name: "monica",
     gender: "Female",
     age: 17,
     email: "monica@dingdong.com",
-    favoriteColor: new Set(),
+    favoriteColor: [...colorFirst],
     isHavePet: true,
     education: [
         {
@@ -26,7 +67,7 @@ const firstUser = {
             graduate: "",
         },
     ],
-    favoriteRestaurant: new Set(),
+    favoriteRestaurant: [...restaurantFirst],
 };
 
 const secondUser = {
@@ -34,7 +75,7 @@ const secondUser = {
     gender: "Male",
     age: 23,
     email: "wendy@dingdong.com",
-    favoriteColor: new Set(),
+    favoriteColor: [...colorSecond],
     isHavePet: false,
     education: [
         {
@@ -53,46 +94,13 @@ const secondUser = {
             graduate: "",
         },
     ],
-    favoriteRestaurant: new Set(),
+    favoriteRestaurant: [...restaurantSecond],
 };
 
-//memasukkan nilai favoriteColor
-//firstUser
-firstUser.favoriteColor.add("Yellow");
-firstUser.favoriteColor.add("Pink");
-firstUser.favoriteColor.add("White");
-firstUser.favoriteColor.add("Purple");
-//secondUser
-secondUser.favoriteRestaurant.add("Blue");
-secondUser.favoriteRestaurant.add("Black");
-secondUser.favoriteRestaurant.add("Grey");
-
-//memasukkan nilai restaurant
-//firsUser
-firstUser.favoriteRestaurant.add("Bento");
-firstUser.favoriteRestaurant.add("Sushi");
-firstUser.favoriteRestaurant.add("Pancake");
-firstUser.favoriteRestaurant.add("Eggy");
-firstUser.favoriteRestaurant.add("Tampura");
-firstUser.favoriteRestaurant.add("Bento");
-firstUser.favoriteRestaurant.add("Eggy");
-firstUser.favoriteRestaurant.add("Padang");
-firstUser.favoriteRestaurant.add("Tteok");
-firstUser.favoriteRestaurant.add("Sushi");
-firstUser.favoriteRestaurant.add("Sushi");
-//secondUser
-secondUser.favoriteRestaurant.add("Tempura");
-secondUser.favoriteRestaurant.add("Bento");
-secondUser.favoriteRestaurant.add("Sushi");
-secondUser.favoriteRestaurant.add("Pancake");
-secondUser.favoriteRestaurant.add("Padang");
-secondUser.favoriteRestaurant.add("Katsu");
-secondUser.favoriteRestaurant.add("Geprek");
-secondUser.favoriteRestaurant.add("Pancake");
-secondUser.favoriteRestaurant.add("Eggy");
-
 // TODO: Masukkan hasil akhir dari kedua user di sini
-const users = [firstUser, secondUser];
+const users = [];
+users.push(firstUser);
+users.push(secondUser);
 
 // ! JANGAN MODIFIKASI LINE DI BAWAH
 function main() {
